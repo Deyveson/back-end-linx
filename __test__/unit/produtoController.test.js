@@ -7,7 +7,7 @@ describe('product test',   ()  => {
 
         const response = await resquest(app).get("/search")
 
-        expect(response.body[0]).toHaveProperty("id")
+        expect(response.body.products[0]).toHaveProperty("id")
     });
 
 
