@@ -5,17 +5,9 @@ describe('product test',   ()  => {
 
     it('findProduct', async() => {
 
-        const response = await resquest(app).get("/search")
-
-        expect(response.body.products[0]).toHaveProperty("id")
-    });
-
-
-    it('test 200', async() => {
-
-        const response = await resquest(app).get("/test")
-
-        expect(response.status).toBe(200)
+        const response = await resquest(app).get("/searchById?terms=")
+        
+        expect(response.body[0]).toHaveProperty("id")
     });
 
 });
