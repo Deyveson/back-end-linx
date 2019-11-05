@@ -7,4 +7,4 @@ Project - API Node.js for Express and TDD (Jest).
     1. Install `yarn install`
     2. Run App `yarn dev`
     3. Run test `yarn test`
-3. Open your browser and see the server running on `localhost:9000/`.
+3. Open your browser and see the server running on `localhost:9000/search?terms=teste`.
