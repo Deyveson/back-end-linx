@@ -10,6 +10,10 @@ routes.use(function(req, res, next) {
     next();
 });
   
-routes.get('/searchById', ProdutoController.search)
+routes.get('/search', ProdutoController.search)
+
+routes.get('*', function(req, res) {
+    res.send(400);
+});
 
 module.exports = routes;

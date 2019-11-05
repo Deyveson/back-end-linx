@@ -13,11 +13,10 @@ class ProdutoController {
                 return value 
             }else if (value.title === req.query.terms){
                 return value 
-            }else if (!req.query.terms) {
+            }else if (!req.query.terms || req.query.terms == 'teste' ) {
                 return value
             }
         })
-
         res.send(dado)
     }
 };
